@@ -1,20 +1,47 @@
 body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    /* padding: 16px; */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.topnav {
+    height: 70px;
     background-color: black;
+    overflow: hidden;
 }
-p {
-    color: lawngreen;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 12px;
+
+.toplink>a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-a {
-    color: lawngreen;
+
+.toplink>a:hover {
+    text-decoration: none;
 }
-@keyframes hideshow {
-    0% {opacity: 1;}
-    49% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 0;}
-}
-.cursor {
-    animation: hideshow 1s infinite;
+
+.parallax {
+    /* The image used */
+    background-image: url("https://cdn2.wanderlust.co.uk/media/1002/cropped-header.jpg?anchor=center&mode=crop&width=1440&height=540&format=auto&quality=90&rnd=131656621890000000");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
