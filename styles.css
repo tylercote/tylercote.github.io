@@ -1,47 +1,52 @@
 body {
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ee5522;
 }
 
-.wrapper {
-    /* padding: 16px; */
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #292929;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 60px;
-}
-
-.topnav {
-    height: 70px;
-    background-color: black;
-    overflow: hidden;
-}
-
-.toplink>a {
-    font-size: 24px;
+.header-text {
+    padding-top: 30px;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.toplink>a:hover {
-    text-decoration: none;
+.propic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
 }
 
-.parallax {
-    /* The image used */
-    background-image: url("https://cdn2.wanderlust.co.uk/media/1002/cropped-header.jpg?anchor=center&mode=crop&width=1440&height=540&format=auto&quality=90&rnd=131656621890000000");
-    /* Set a specific height */
-    height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card-wrapper {
+    padding: 30px 30px 30px 30px;
+    background-color: #ee5522;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23ca481d' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.ccard {
+    background-color: #3a3a3a;
+    color: white;
+    margin: 30px;
+    padding: 25px;
+}
+
+.card-header {
+
+}
+
+.skills-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+}
+
+.software-list {
+    list-style: none;
 }
