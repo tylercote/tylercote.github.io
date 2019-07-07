@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://kit.fontawesome.com/b75d47124c.js"></script>
+    <script type="text/javascript" src="dropdown.js"></script>
 </head>
 
 <body>
@@ -38,20 +39,20 @@
                 <div class="ccard">
                     <h4 class="ccard-header">Work Experience</h4>
 
-                    <h5 class="job-title">Software Developer Intern<i class="work-subtext"><span class="company-name">John Hancock </span><span class="date-range">(Jan 2019 - Jul 2019) - Boston, MA</span></i></h5>
+                    <h5>Software Developer Intern<i class="work-subtext"><span class="company-name">John Hancock </span><span class="date-range">(Jan 2019 - Jul 2019) - Boston, MA</span></i></h5>
                     <ul>
                         <li>Designed and developed a web application prototype for a business proposal advocating for the development of an in-house solution to replace software used to view and enter the company’s investments, transactions, and funding.</li>
                         <li>Implemented a dashboard to view and filter on Morningstar financial data, with the ability to save these filters, which greatly reduced the quantity and therefore cost of Morningstar licenses for the business.</li>
                         <li>Developed and deployed multiple web and backend applications allowing users to more easily view, enter, and update rows in SQL Server databases, with appropriate validation checking.</li>
                     </ul>
-
-                    <h5 class="job-title">Web Developer<i class="work-subtext"><span class="company-name">Mittal Solutions, LLC. </span><span class="date-range">(Aug 2018 - Jan 2019) - Fairfax, VA</span></i></h5>
+                    <hr>
+                    <h5>Web Developer<i class="work-subtext"><span class="company-name">Mittal Solutions, LLC. </span><span class="date-range">(Aug 2018 - Jan 2019) - Fairfax, VA</span></i></h5>
                     <ul>
                         <li>Developed multiple websites concurrently in a fast-paced, deadline-based working environment.</li>
                         <li>Communicated constantly with other developers and UX designer to minimize time of development and maximize quality of product.</li>
                     </ul>
-
-                    <h5 class="job-title">Software Developer Intern<i class="work-subtext"><span class="company-name">Eagle Investment Systems (BNY Mellon) - </span><span class="date-range">(Jan 2018 - Aug 2018) - Wellesley, MA</span></i></h5>
+                    <hr>
+                    <h5>Software Developer Intern<i class="work-subtext"><span class="company-name">Eagle Investment Systems (BNY Mellon) - </span><span class="date-range">(Jan 2018 - Aug 2018) - Wellesley, MA</span></i></h5>
                     <ul>
                         <li>Developed various features for a highly configurable widget-based dashboard to be used by banks and investment managers, displaying their high quantity of financial data in a comprehensive and performant single page application.</li>
                         <li>Constructed SQL scripts to dynamically add new dashboards and widgets to the application, and new features to existing widgets.</li>
@@ -67,11 +68,12 @@
             <div class="col-lg-4 col-12 right-col d-flex flex-column">
                 <div class="ccard">
                     <h4 class="ccard-header">Contact Me</h4>
-                    <ul>
-                        <li>Boston, MA</li>
-                        <li>Email: tyler16cote@gmail.com</li>
-                        <li><a href="https://www.linkedin.com/in/tyler-cote/">LinkedIn</a></li>
-                        <li><a href="https://github.com/tylercote">GitHub</a></li>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i>Boston, MA</li>
+                        <li><i class="fas fa-envelope"></i>tyler16cote@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/tyler-cote/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                        <li><a href="https://github.com/tylercote"><i class="fab fa-github-square"></i>GitHub</a></li>
+                        <li><a href="#"><i class="fas fa-file"></i>Resume</a></li>
                     </ul>
                 </div>
 
@@ -79,15 +81,15 @@
                     <h4 class="ccard-header">Technical Skills</h4>
                     Languages & Frameworks:
                     <ul class="skills-list">
-                        <li style="color: lightgreen">Java</li>
-                        <li style="color: lightgreen">JavaScript</li>
-                        <li style="color: lightgreen">React</li>
-                        <li style="color: lightgreen">React-Native</li>
-                        <li style="color: lightgreen">Redux</li>
-                        <li style="color: lightgreen">Angular</li>
-                        <li style="color: lightgreen">HTML</li>
-                        <li style="color: lightgreen">CSS</li>
-                        <li style="color: lightgreen">SQL</li>
+                        <li style="color: #5fe66a">Java</li>
+                        <li style="color: #5fe66a">JavaScript</li>
+                        <li style="color: #5fe66a">React</li>
+                        <li style="color: #5fe66a">React-Native</li>
+                        <li style="color: #5fe66a">Redux</li>
+                        <li style="color: #5fe66a">Angular</li>
+                        <li style="color: #5fe66a">HTML</li>
+                        <li style="color: #5fe66a">CSS</li>
+                        <li style="color: #5fe66a">SQL</li>
                         <li style="color: #e6c65f">Polymer</li>
                         <li style="color: #e6c65f">Python</li>
                         <li style="color: #e6c65f">R</li>
@@ -106,13 +108,35 @@
 
                 <div class="ccard">
                     <h4 class="ccard-header">Education</h4>
+                    <h5>Northeastern University</h5>
+                    B.S. Computer Science (2021)<br>
+                    Minors: Math, Economics<br>
+                    <button class="class-dropdown"><span class="right-caret"></span>Computer Science</button>
+                    <div class="class-dropdown-content">
+                        <ul class="course-list">
+                            <li>Course 1</li>
+                            <li>Course 2</li>
+                            <li>Course 3</li>
+                        </ul>
+                    </div>
+                    <button class="class-dropdown">Math</button>
+                    <div class="class-dropdown-content">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="class-dropdown">Economics</button>
+                    <div class="class-dropdown-content">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <hr>
+                    <h5>Shrewsbury High School</h5>
+                    Class of 2016<br>
+                    National Honor Society, French National Honor Society, Tri-M Honor Society, Honor Roll 2012 – 2016
                 </div>
-
                 <div class="ccard">
                     <h4 class="ccard-header">Interests</h4>
                     <ul>
                         <li>Skiing</li>
-                        <li>Stock trading</li>
+                        <li>Stock speculating / investing</li>
                         <li>Hiking</li>
                         <li>Weightlifting</li>
                         <li>Ukulele</li>

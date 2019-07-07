@@ -6,6 +6,10 @@ body {
     background-color: #5fdbe6;
 }
 
+hr {
+    border-color: grey;
+}
+
 .text-pop {
     color: #e6c65f;
 }
@@ -45,6 +49,11 @@ h4 {
     margin-bottom: 20px;
 }
 
+h5 {
+    font-weight: 500;
+    color: #7dc5cc;
+}
+
 .profile-photo-wrapper {
     text-align: right;
 }
@@ -56,6 +65,29 @@ h4 {
     margin-left:auto;
     margin-right:auto;
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #5fdbe6;
+}
+
+i.fas {
+    margin-right: 10px;
+}
+
+i.fab {
+    margin-right: 10px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
 }
 
 .card-wrapper {
@@ -82,11 +114,6 @@ h4 {
     color: #5fdbe6;
 }
 
-.job-title {
-    font-weight: 500;
-    color: #7dc5cc;
-}
-
 .work-subtext {
     float: right;
 }
@@ -108,4 +135,61 @@ h4 {
 
 .software-list {
     list-style: none;
+}
+
+.course-list {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    list-style: none;
+}
+
+.open-caret {
+    transform: rotate(0deg) !important;
+    transition: all .25s ease-out !important;
+}
+
+.right-caret {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #ffffff transparent transparent transparent;
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    top: -3px;
+    position: relative;
+    transform: rotate(-90deg);
+    transition: all .25s ease-in;
+}
+
+.class-dropdown {
+    background:none;
+    color:inherit;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    /*border is optional*/
+    cursor: pointer;
+}
+
+.class-dropdown:focus {
+    outline: none;
+}
+
+.active, .class-dropdown:hover {
+    color: #e6c65f;
+}
+
+.class-dropdown:hover > .right-caret {
+    color: #e6c65f;
+}
+
+.class-dropdown-content {
+    padding: 0 18px;
+    background: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
