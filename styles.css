@@ -115,15 +115,19 @@ i.fab {
 }
 
 .work-subtext {
-    float: right;
+    font-size: 20px;
+    font-weight: 500;
+    color: #7dc5cc;
 }
 
 .company-name {
-    font-weight: 200;
+    font-weight: 300;
+    color: #5fe66a;
 }
 
 .date-range {
     font-weight: 200;
+    float: right;
 }
 
 .skills-list {
@@ -192,4 +196,13 @@ i.fab {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+}
+
+ul {
+    margin-top: 5px;
 }
