@@ -3,7 +3,6 @@ console.log(coll.length);
 var i;
 setTimeout(() => {
     for (i = 0; i < coll.length; i++) {
-        console.log('BEFORE ADD EVENT LISTENTER');
         coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var caret = this.getElementsByClassName("right-caret");
@@ -18,6 +17,5 @@ setTimeout(() => {
                 content.style.maxHeight = content.scrollHeight + "px";
             }
         });
-        console.log('AFTER ADD EVENT LISTENTER');
     }
 }, 1000);

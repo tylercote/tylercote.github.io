@@ -1,3 +1,14 @@
+@media screen and (max-width: 755px) {
+    .header-wrapper {
+        text-align: center !important;
+    }
+
+    .header {
+        padding-top: 15px !important;
+        padding-bottom: 25px !important;
+    }
+}
+
 body {
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Exo 2', sans-serif;
@@ -15,9 +26,13 @@ hr {
 }
 
 .header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     background-color: #292929;
+}
+
+.header-wrapper {
+    padding-left: 8vw;
 }
 
 .header-text {
@@ -29,11 +44,13 @@ h1.header-name {
     font-family: 'Exo 2', sans-serif;
     font-weight: 800;
     color: #5fdbe6;
-    font-size: 82px;
-    margin-bottom: 20px;
+    font-size: 64px;
+    margin-bottom: 5px;
 }
 
 .header-subtext {
+    margin-bottom: 20px;
+    font-size: 24px;
     font-weight: 300;
     color: #7dc5cc;
 }
@@ -47,6 +64,18 @@ h4 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 800;
     margin-bottom: 20px;
+}
+
+h4.nav-text {
+    margin: 0;
+}
+
+.nav-link {
+
+}
+
+.nav-link.active {
+    color: #5fdbe6;
 }
 
 h5 {
@@ -107,6 +136,13 @@ i.fab {
     -webkit-box-shadow: 10px 10px 34px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 34px -2px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 34px -2px rgba(0,0,0,0.75);
+}
+
+.ccard-link-wrapper {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 10px 5px 10px 5px;
 }
 
 .ccard-header {
@@ -178,9 +214,9 @@ i.fab {
     outline: none;
 }
 
-.active, .class-dropdown:hover {
-    color: #e6c65f;
-}
+/*.active, .class-dropdown:hover {*/
+/*    color: #e6c65f;*/
+/*}*/
 
 .class-dropdown:hover > .right-caret {
     color: #e6c65f;
@@ -192,4 +228,42 @@ i.fab {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.tab-pane {
+    padding-top: 20px;
+}
+
+.tech-used {
+    margin-bottom: 20px;
+}
+
+.project-img {
+    border:  3px solid #5fdbe6;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-git-link {
+    margin-left: 10px;
+    color: #5fdbe6;
+}
+
+.project-git-link:hover {
+    color: white;
 }

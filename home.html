@@ -9,19 +9,30 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://kit.fontawesome.com/b75d47124c.js"></script>
-    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="scripts/dropdown.js"></script>
+    <script type="text/javascript" src="scripts/style-active-link.js"></script>
 </head>
 
 <body>
     <div class="container-fluid wrapper">
         <div class="row header align-items-center justify-content-center">
-            <div class="col-12 text-center">
+            <div class="col-sm-12 col-md-6 sm-text-center md-text-left header-wrapper">
                 <h1 class="header-name">Tyler Cote</h1>
                 <h3 class="header-subtext">Software Developer | Student</h3>
             </div>
-        </div>
-        <div class="row">
-
+            <div class="col-sm-12 col-md-6">
+                <ul class="nav justify-content-around">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link"><h4 class="nav-text">Home</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link"><h4 class="nav-text">Projects</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html"  class="nav-link"><h4 class="nav-text">Contact Me</h4></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -30,10 +41,12 @@
             <div class="col-lg-8 col-12 left-col d-flex flex-column">
                 <div class="ccard">
                     <h4 class="ccard-header">About Me</h4>
-                    <p>I am a third year student at <span class="text-pop">Northeastern University</span> majoring in Computer Science, with minors in Economics and Math. I have had multiple internships working on front-end development, and I am passionate about delivering elegant and intuitive user experiences. I am currently an intern at John Hancock, developing features of internal applications used to streamline the daily operations of the Investments division. </p>
+                    <p>I am a fourth year student at <span class="text-pop">Northeastern University</span> majoring in Computer Science, with minors in Economics and Math.
+                        I have had multiple internships working on front-end development, and I am passionate about delivering elegant and intuitive user experiences.
+                        I will be graduating in the Spring of 2021, and will have had experience developing software at four different companies by that time.  Please feel free to
+                    reach out me regarding any inquiries.</p>
 
-                    <p>I am a third year student at Northeastern University majoring in Computer Science, with minors in Economics and Math. I have had multiple internships working on front-end development, and I am passionate about delivering elegant and intuitive user experiences. I am currently an intern at John Hancock, developing features of internal applications used to streamline the daily operations of the Investments division. </p>
-                    <img class="propic" src="propic.png">
+                    <img class="propic" src="assets/propic.png">
                 </div>
 
                 <div class="ccard">
@@ -60,14 +73,10 @@
                         <li>Integrated completely into a scrum team.</li>
                     </ul>
                 </div>
-
-                <div class="ccard">
-                    <h4 class="ccard-header">Personal Projects</h4>
-                </div>
             </div>
             <div class="col-lg-4 col-12 right-col d-flex flex-column">
                 <div class="ccard">
-                    <h4 class="ccard-header">Contact Me</h4>
+                    <h4 class="ccard-header">Info</h4>
                     <ul class="contact-list">
                         <li><i class="fas fa-map-marker-alt"></i>Boston, MA</li>
                         <li><i class="fas fa-envelope"></i>tyler16cote@gmail.com</li>
