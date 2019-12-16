@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Tyler Cote | Software Developer | Student</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/b75d47124c.js"></script>
-    <script type="text/javascript" src="scripts/dropdown.js"></script>
-    <script type="text/javascript" src="scripts/style-active-link.js"></script>
+    <script src="scripts/dropdown.js" type="text/javascript"></script>
+    <script src="scripts/style-active-link.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -23,13 +23,13 @@
         <div class="col-sm-12 col-md-6">
             <ul class="nav justify-content-around">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link header-nav-link"><h4 class="nav-text">Home</h4></a>
+                    <a class="nav-link header-nav-link" href="index.html"><h4 class="nav-text">Home</h4></a>
                 </li>
                 <li class="nav-item">
-                    <a href="projects.html" class="nav-link header-nav-link"><h4 class="nav-text">Projects</h4></a>
+                    <a class="nav-link header-nav-link" href="projects.html"><h4 class="nav-text">Projects</h4></a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.html"  class="nav-link header-nav-link"><h4 class="nav-text">Contact Me</h4></a>
+                    <a class="nav-link header-nav-link"  href="contact.html"><h4 class="nav-text">Contact Me</h4></a>
                 </li>
             </ul>
         </div>
@@ -43,44 +43,82 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                     <li class="nav-item">
-                        <a class="nav-link active" id="musix-tab" data-toggle="tab" href="#musix" role="tab" aria-controls="musix" aria-selected="true">Musix</a>
+                        <a aria-controls="musix" aria-selected="true" class="nav-link active" data-toggle="tab" href="#musix" id="musix-tab" role="tab">Musix</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="groupme-bot-tab" data-toggle="tab" href="#groupme-bot" role="tab" aria-controls="groupme-bot" aria-selected="false">GroupMe Bot</a>
+                        <a aria-controls="groupme-bot" aria-selected="false" class="nav-link" data-toggle="tab" href="#groupme-bot" id="groupme-bot-tab" role="tab">GroupMe Bot</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="nyte-tab" data-toggle="tab" href="#nyte" role="tab" aria-controls="nyte" aria-selected="false">Nyte</a>
+                        <a aria-controls="nyte" aria-selected="false" class="nav-link" data-toggle="tab" href="#nyte" id="nyte-tab" role="tab">Nyte</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="hqsolver-tab" data-toggle="tab" href="#hqsolver" role="tab" aria-controls="hqsolver" aria-selected="false">HQ Trivia Solver</a>
+                        <a aria-controls="hqsolver" aria-selected="false" class="nav-link" data-toggle="tab" href="#hqsolver" id="hqsolver-tab" role="tab">HQ Trivia Solver</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="spotamatch-tab" data-toggle="tab" href="#spotamatch" role="tab" aria-controls="spotamatch" aria-selected="false">Spot-a-Match</a>
+                        <a aria-controls="spotamatch" aria-selected="false" class="nav-link" data-toggle="tab" href="#spotamatch" id="spotamatch-tab" role="tab">Spot-a-Match</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="dota2picker-tab" data-toggle="tab" href="#dota2picker" role="tab" aria-controls="dota2picker" aria-selected="false">DotA 2 Counter Picker</a>
+                        <a aria-controls="dota2picker" aria-selected="false" class="nav-link" data-toggle="tab" href="#dota2picker" id="dota2picker-tab" role="tab">DotA 2 Counter Picker</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active" id="musix" role="tabpanel" aria-labelledby="musix-tab">
-                        <h4 class="ccard-header">Under construction...</h4>
+                    <div aria-labelledby="musix-tab" class="tab-pane fade show active" id="musix" role="tabpanel">
+                        <h4 class="ccard-header text-center">Musix</h4>
+                        <h5 class="tech-used text-center">Skills: React.js, ag-grid, Django Rest Framework (Python), JWT Authentication, MySQL</h5>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Musix is an application that allows users to log music concerts and festivals they have attended, as well as give them short reviews.
+                            This project consists of a Python (Django Rest Framework) backend that accesses a MySQL database, and makes that data available through API endpoints to a React web application.
+                        </p>
                     </div>
 
-                    <div class="tab-pane fade" id="groupme-bot" role="tabpanel" aria-labelledby="groupme-bot-tab">
-                        <h4 class="ccard-header">Under construction...</h4>
+                    <div aria-labelledby="groupme-bot-tab" class="tab-pane fade" id="groupme-bot" role="tabpanel">
+                        <h4 class="ccard-header text-center">Household GroupMe Bot</h4>
+                        <h5 class="tech-used text-center">Skills: Python, PostgreSQL, GroupMe API, Heroku</h5>
+                        <h5 class="tech-used text-center">Collaborated with:
+                            <a class="project-git-link" href="https://github.com/yuvaltimen" target="_blank">Yuval Timen</a>
+                        </h5>
+
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;This bot is designed to supplement our house's online group chat (on GroupMe), by providing informational
+                            messages and access to various commands that support the function and chore distribution of our house.
+                        </p>
+                        <p>
+                            <ul>
+                                <li>
+                                    <i>Morning report:</i> A small weather report every morning for every location where our group is currently residing
+                                </li>
+                        <li>
+                            <i>Trash reminders:</i> Reminders twice a week to take out the trash and recycling
+                        </li>
+
+                        <li>
+                            <i>Rent reminders:</i> Monthly reminder to wire money for rent, along with the amount each person owes
+                        </li>
+
+                        <li>
+                        <i>Shopping list:</i> A shopping list that is maintained through commands sent by users (e.g. /add paper towels, /remove toothpaste).  The item is persisted to the database along with the user that added it, and the time.
+                    </li>
+                        <li>
+                            <i>Spending tally:</i> A list that records items bought for the common good of the house.  The item is persisted to the database along with the user that added it, the cost, and the time.  The command "/spending" displays a leaderboard of aggregated money spent towards the household for each person.
+                        </li>
+
+                        <li>
+                            <i>Dishwasher tally:</i> The command "/dishes" records that the user has emptied the dishwasher (peristed to the DB).  After persisting to the DB, a leaderboard shows how many times each person has emptied the dishwasher.
+                            </ul>
+                        </p>
                     </div>
 
-                    <div class="tab-pane fade" id="nyte" role="tabpanel" aria-labelledby="nyte-tab">
+                    <div aria-labelledby="nyte-tab" class="tab-pane fade" id="nyte" role="tabpanel">
                         <h4 class="ccard-header text-center">Nyte</h4>
                         <h5 class="tech-used text-center">Skills: React-Native, UI/UX Design, Google Places API, Google Maps API, Adobe XD, Entrepreneurship</h5>
                         <h5 class="tech-used text-center">Collaborated with:
-                            <a href="https://github.com/CrizR" target="_blank" class="project-git-link">Chris Risley</a>
+                            <a class="project-git-link" href="https://github.com/CrizR" target="_blank">Chris Risley</a>
                         </h5>
                         <p>
                             &nbsp;&nbsp;&nbsp;&nbsp;The Nyte app was meant to give
@@ -103,18 +141,18 @@
                             <div class="row">
                                 <div class="col">
                                     <figure>
-                                        <img class="project-img" style="width: 425px; height: 650px"src="assets/NyteDesign.png">
+                                        <img class="project-img" src="assets/NyteDesign.png"style="width: 425px; height: 650px">
                                         <figcaption>Functional design for List View. Made in Adobe XD.</figcaption>
                                     </figure>
                                 </div>
-                                <div class="col">
-                                    <figure>
-                                        <img class="project-img" src="assets/NyteMap.png">
-                                        <figcaption>Early prototype for a Map View.</figcaption>
-                                    </figure>
-                                </div>
+<!--                                <div class="col">-->
+<!--                                    <figure>-->
+<!--                                        <img class="project-img" src="assets/NyteMap.png">-->
+<!--                                        <figcaption>Early prototype for a Map View.</figcaption>-->
+<!--                                    </figure>-->
+<!--                                </div>-->
                                 <div class="col-12">
-                                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/EFgvrUc8KAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" height="500" src="https://www.youtube.com/embed/EFgvrUc8KAI" width="100%"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -126,11 +164,11 @@
                         </p>
                     </div>
 
-                    <div class="tab-pane fade" id="hqsolver" role="tabpanel" aria-labelledby="hqsolver-tab">
-                        <h4 class="ccard-header text-center">HQ Trivia Solver<a href="https://github.com/tylercote/hq-hack" target="_blank" class="project-git-link"><i class="fab fa-github-square"></i></a></h4>
+                    <div aria-labelledby="hqsolver-tab" class="tab-pane fade" id="hqsolver" role="tabpanel">
+                        <h4 class="ccard-header text-center">HQ Trivia Solver<a class="project-git-link" href="https://github.com/tylercote/hq-hack" target="_blank"><i class="fab fa-github-square"></i></a></h4>
                         <h5 class="tech-used text-center">Skills: Java, Tess4J (OCR Library), Google CustomSearch API, JUnit, JSoup</h5>
                         <h5 class="tech-used text-center">Collaborated with:
-                            <a href="https://github.com/danielgaooooo" target="_blank" class="project-git-link">Daniel Gao</a>
+                            <a class="project-git-link" href="https://github.com/danielgaooooo" target="_blank">Daniel Gao</a>
                         </h5>
 
                         <p>
@@ -151,13 +189,13 @@
                         </p>
                     </div>
 
-                    <div class="tab-pane fade" id="spotamatch" role="tabpanel" aria-labelledby="spotamatch-tab">
-                        <h4 class="ccard-header text-center">Spot-a-Match<a href="https://github.com/tylercote/spot-a-match" target="_blank" class="project-git-link"><i class="fab fa-github-square"></i></a></h4>
+                    <div aria-labelledby="spotamatch-tab" class="tab-pane fade" id="spotamatch" role="tabpanel">
+                        <h4 class="ccard-header text-center">Spot-a-Match<a class="project-git-link" href="https://github.com/tylercote/spot-a-match" target="_blank"><i class="fab fa-github-square"></i></a></h4>
                         <h5 class="tech-used text-center">Skills: Angular, Spotify API (OAuth), Hackathon collaboration</h5>
                         <h5 class="tech-used text-center">Collaborated with:
-                            <a href="https://github.com/danielgaooooo" target="_blank" class="project-git-link">Daniel Gao</a>,
-                            <a href="https://github.com/meganla" target="_blank" class="project-git-link">Megan Larson</a>,
-                            <a href="https://github.com/julian-zucker" target="_blank" class="project-git-link">Julian Zucker</a>
+                            <a class="project-git-link" href="https://github.com/danielgaooooo" target="_blank">Daniel Gao</a>,
+                            <a class="project-git-link" href="https://github.com/meganla" target="_blank">Megan Larson</a>,
+                            <a class="project-git-link" href="https://github.com/julian-zucker" target="_blank">Julian Zucker</a>
                         </h5>
 
                         <p>
@@ -174,8 +212,8 @@
 
                     </div>
 
-                    <div class="tab-pane fade" id="dota2picker" role="tabpanel" aria-labelledby="dota2picker-tab">
-                        <h4 class="ccard-header text-center">DotA 2 Counter Picker<a href="https://github.com/tylercote/dota2-hero-picker" target="_blank" class="project-git-link"><i class="fab fa-github-square"></i></a>
+                    <div aria-labelledby="dota2picker-tab" class="tab-pane fade" id="dota2picker" role="tabpanel">
+                        <h4 class="ccard-header text-center">DotA 2 Counter Picker<a class="project-git-link" href="https://github.com/tylercote/dota2-hero-picker" target="_blank"><i class="fab fa-github-square"></i></a>
                         </h4>
                         <h5 class="tech-used text-center">Skills: Java, Java Swing, MVC Pattern, JSoup (web scraper)</h5>
 
@@ -188,13 +226,13 @@
                         </p>
 
                         <p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;The site <a style="color: #5fdbe6" href="https://www.dotabuff.com/">dotabuff.com</a> provides
+                            &nbsp;&nbsp;&nbsp;&nbsp;The site <a href="https://www.dotabuff.com/" style="color: #5fdbe6">dotabuff.com</a> provides
                             statistics about all things DotA 2, including statistics about how well heroes counter other heroes.
                             For example, the hero Anti-Mage has a + 5.52% advantage when playing against Zeus.  This is because Zeus deals mainly magic damage,
                             and Anti-Mage's skills and abilities provide him with extra protection against magic damage:
                         </p>
 
-                        <img style="width: 45%" class="project-img" src="assets/AntimageMatchups.png"/>
+                        <img class="project-img" src="assets/AntimageMatchups.png" style="width: 45%"/>
 
                         <p>
                             &nbsp;&nbsp;&nbsp;&nbsp;This tool allows a player to enter in all of the heroes that have been picked and banned in the game so far,
@@ -211,9 +249,9 @@
         </div>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
